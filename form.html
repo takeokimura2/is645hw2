@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link href="../CSS/styles.css" type="text/css" rel="stylesheet">
+</head>
+<a href="index.html">Home</a>
+<hr color="gray">
+
+<body>
+
+  <h2>Rider Registration Form</h2>
+
+  <h4>Rider Information</h4>
+  <form action="">
+    First Name: <INPUT TYPE="text" NAME="fname" /><br>
+    Last Name: <INPUT TYPE="text" NAME="lname" /><br>
+    Address Line 1: <INPUT TYPE="text" NAME="al1" /><br>
+    Address Line 2: <INPUT TYPE="text" NAME="al1" /><br>
+    City: <INPUT TYPE="text" NAME="city" /><br>
+    State: <INPUT TYPE="text" NAME="state" maxlength="2" /><br>
+    Zip Code: <input TYPE="number" NAME="zipcode" maxlength="5" /><br>
+    Date of Birth <input TYPE="date" NAME="birthday" /><br>
+
+    Gender:
+    <INPUT TYPE="radio" NAME="gender" VALUE="male" />Male
+    <INPUT TYPE="radio" NAME="gender" VALUE="female" />Female <br>
+
+    Your Local Public Transit:
+    <select NAME="localtransit" multiple>
+      <option value="MetroLink">MetroLink</option>
+      <option value="Metro">Metro</option>
+      <option value="LongBeachTransit">Long Beach Transit</option>
+      <option value="octa">OCTA</option>
+    </select><br>
+
+    User Name (email) <input TYPE="email" NAME="email" /><br>
+    Password <input TYPE="password" NAME="password" /><br>
+
+    Payment:<br>
+    <input TYPE="radio" NAME="pmt" VALUE="credit" checked />Credit Card<br>
+    <input TYPE="radio" NAME="pmt" VALUE="applepay" />Apple Pay<br>
+    <input TYPE="radio" NAME="pmt" VALUE="applepay" />PayPal<br>
+    Name on Credit Card <input TYPE="text" NAME="cardholder" /><br>
+    Credit Card Number <input TYPE="number" NAME="ccnumber" minlength="15" maxlength="16" /><br>
+    Expiration Date <input TYPE="text" NAME="expdate" /><br>
+    CVV <input TYPE="number" NAME="cvv" minlength="3" maxlength="3" /><br>
+
+    Reload Option: <br>
+    <input TYPE="checkbox" NAME="Reload" VALUE="Auto" /> Auto Reload<br>
+    <input TYPE="checkbox" NAME="Reload" VALUE="Manual" /> Manual Reload<br>
+    <button TYPE="reset">Reset</button> <button class="btn-submit" TYPE="submit">Submit</button>
+  </form>
+
+</body>
+
+</html>
